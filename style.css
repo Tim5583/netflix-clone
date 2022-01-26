@@ -94,6 +94,7 @@ svg g {
 .section-img {
     padding: 0rem;
     width: 100%;
+    max-width: 600px;
 }
 
 .section-discription {
@@ -109,6 +110,7 @@ svg g {
 .tv {
     position: relative;
     max-width: 600px;  /* check out */
+    margin: auto;
 }
 
 .tv video {
@@ -141,13 +143,15 @@ svg g {
 .download-ani {
     position: absolute;
     top: 70%;
-    left: 10%;
-    right: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
     padding: .5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 80%;
+    max-width: 384px;
     border: 2px solid #404040;
     border-radius: 15px;
     background-color: #000;
@@ -224,10 +228,11 @@ svg g {
 
 .email-input {
     margin: 1rem auto;
+    display: block;
     position: relative;
     height: 3rem;
     width: 90%;
-    max-width: 700px;
+    max-width: 500px;
     padding: 1rem;
 }
 
@@ -252,12 +257,89 @@ svg g {
 .footer-links {
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .footer-link-items a, .footer-location{
     color: rgb(104, 104, 104);
     text-decoration: none;
-    font-size: 0.9rem;
-    line-height: 2;
+    font-size: 0.8rem;
+    line-height: 2.5rem;
+}
+
+@media (min-width: 500px) {
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 550px) {
+    .header {
+        height: 700px;
+    }
+
+    .header-main {
+        padding: 5rem 3rem 3rem 0;
+    }
+
+    .btn-danger {
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .sub1 {
+        font-size: 1.6rem;
+    }
+
+    .accordion-main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .accordion-button {
+        font-size: 1.4rem;
+    }
+
+    .accordion-title {
+        padding: 0 4rem 2rem;
+        font-size: 2.5rem;
+    }
+
+    .movie-poster img {
+        width: 50px;
+    }
+
+    .download {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 4rem;
+    }
+
+    .register-bottom p {
+        font-size: 1.3rem;
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 740px) {
+    .email-input {
+        height: auto;
+        padding: 1.2rem 1rem;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .accordion-icon {
+        width: 20px;
+    }
+}
+
+@media (min-width: 950px) {
+    
 }
