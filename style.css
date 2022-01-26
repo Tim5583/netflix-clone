@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background: #000;
+    --white: #fff;
+    --main-header: 2rem;
+    --border: 8px solid rgba(109, 109, 109, 0.5);
+    --section-title: 1.625rem;
+    --light-dark: #222222;
+    --netflix-red: #e20712;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    /* background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/20876cab-b49d-4957-bbaf-906ceb1c05f1/2f0c61cc-afc0-4321-9e61-47a5545526d2/LK-en-20220117-popsignuptwoweeks-perspective_alpha_website_small.jpg); */
+    height: 520px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .8)) ,url(https://i.ibb.co/vXqDmnh/background.jpg); 
+    background-position: center;
+}
+
+.nav {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+svg g {
+    fill: red;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #e50914;
+    color: #fff;
+}
+
+.header-main {
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: var(--main-header);
+    font-size: 2rem;
+}
+
+.header-title {
+    padding: 2rem 2rem 1rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.header-sub {
+    padding: .5rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* main  */
+
+.under-bor {
+    border-bottom: var(--border);
+}
+
+.section-title {
+    padding: 0 0 .5rem 0;
+    font-size: var(--section-title);
+}
+
+.section {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+.section-img {
+    padding: 0rem;
+    width: 100%;
+}
+
+.section-discription {
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.watch {
+    padding: 3rem;
+    text-align: center;
+}
+
+.tv {
+    position: relative;
+    max-width: 600px;  /* check out */
+}
+
+.tv video {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-height: 55%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.download-ani::after {
+    width: 3em;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+        background-size: auto;
+    background-size: 100%;
+    content: '';
+    flex-grow: 0;
+    flex-shrink: 0; 
+}
+
+/* download your shows section */
+.download-ani {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    right: 10%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    border: 2px solid #404040;
+    border-radius: 15px;
+    background-color: #000;
+    transform: scale(.9);
+}
+
+.phone-girl {
+    position: relative;
+}
+
+.movie-poster img {
+    width: 40px;
+}
+
+.downloading {
+    text-align: left;
+}
+
+.download {
+    color: #0071eb;
+    font-size: .8rem;
+}
+
+/* accordion section  */
+
+.accordion {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.accordion-item {
+    padding: 5px 0;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1em;
+    background-color: var(--light-dark);
+    border: none;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.accordion-icon {
+    width: 15px;
+    transform: rotate(45deg);
+    border: none;
+    border-radius: 0;
+    fill: var(--white);
+    transition: 200ms ease-in-out;
+}
+
+.accordion-dis {
+    background-color: var(--light-dark);
+    padding: 1rem;
+    text-align: left;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.icon-ro {
+    transform: rotate(0deg);
+}
+
+.register-bottom {
+    margin: 2rem 0;
+    padding: 0.5rem;
+}
+
+.email-input {
+    margin: 1rem auto;
+    position: relative;
+    height: 3rem;
+    width: 90%;
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.submit-email {
+    background-color: var(--netflix-red);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.email-input:active, .email-input:focus {
+    outline: none;
+}
+
+/* footer  */
+
+.footer {
+    padding: 2rem;
+    color: rgb(104, 104, 104);
+}
+
+.footer-links {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-link-items a, .footer-location{
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 2;
+}
