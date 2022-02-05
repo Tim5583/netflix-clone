@@ -267,6 +267,10 @@ svg g {
     line-height: 2.5rem;
 }
 
+.footer-link-items a:hover {
+    text-decoration: underline;
+}
+
 @media (min-width: 500px) {
     .footer-links {
         grid-template-columns: repeat(3, 1fr);
@@ -297,6 +301,7 @@ svg g {
     .accordion-main {
         width: 80%;
         margin: auto;
+        max-width: 800px;
     }
 
     .accordion-button {
@@ -318,6 +323,8 @@ svg g {
 
     .footer {
         padding: 4rem;
+        max-width: 900px;
+        margin: auto;
     }
 
     .register-bottom p {
@@ -341,5 +348,45 @@ svg g {
 }
 
 @media (min-width: 950px) {
-    
+    #netflixLogo {
+        width: 130px;
+    }
+
+    .nav {
+        padding: 1.5rem 3rem;
+    }
+
+    .section-sub {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .section-discription {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    .sub-section-watch {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .se-text {
+        max-width: 550px;
+        text-align: left;
+    }
+
+    .phone-girl, .over-the-moon {
+        order: 1;
+    }
+
+    .phone-girl-header, .over-the-moon-header {
+        order: 2;
+    }
+
 }
