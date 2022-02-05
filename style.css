@@ -226,8 +226,12 @@ svg g {
     padding: 0.5rem;
 }
 
-.email-input {
+form {
     margin: 1rem auto;
+}
+
+.email-input {
+    margin: auto;
     display: block;
     position: relative;
     height: 3rem;
@@ -237,6 +241,7 @@ svg g {
 }
 
 .submit-email {
+    margin-top: .5rem;
     background-color: var(--netflix-red);
     color: var(--white);
     font-weight: 400;
@@ -389,4 +394,27 @@ svg g {
         order: 2;
     }
 
+    form {
+        width: 640px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .submit-email {
+        margin-top: 0;
+        border-radius: 2px;
+    }
+
+    ::placeholder {
+        font-size: 1.1rem;
+        font-weight: bold;
+        opacity: .4;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .title {
+        font-size: 3.5rem;
+    }
 }
