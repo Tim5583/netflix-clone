@@ -5,6 +5,7 @@
 - html
 - javascript
 - css
+- [live URL](https://my-netflix-copy.netlify.app/)
 
 ### Screenshot
 
