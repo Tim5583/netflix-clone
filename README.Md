@@ -1,6 +1,6 @@
 ## Netflix Clone
 
-### this is my netfilx clone. it made with, 
+### netfilx clone made with, 
 
 - html
 - javascript
